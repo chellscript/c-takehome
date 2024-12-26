@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:tailwindcss/recommended",
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "ignorePatterns": [".next"],
+  "rules": {
+    "tailwindcss/classnames-order": "off",
+    "react/no-unescaped-entities": "off",
+    "tailwindcss/migration-from-tailwind-2": "off",
+    "tailwindcss/no-custom-classname": [
+      1,
+      {
+        "whitelist": ["iconify"]
+      }
+    ]
+  }
+}
